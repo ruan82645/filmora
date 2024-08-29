@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "filmora",
   "version": "0.1.0",
   "private": true,
@@ -36,9 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-=======
-  "dependencies": {
-    "react-router-dom": "^6.26.1"
->>>>>>> c8a860c2fbbbdfac390d0e5fce772400088f6ed5
   }
 }
