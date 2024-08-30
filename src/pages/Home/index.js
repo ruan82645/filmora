@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import api from "../../Services/api";
-import "./Home.css";
+import "./style.css";
 
 //https://api.themoviedb.org/3/movie/now_playing?api_key=c634b4775a037a56f5dd2baf3951c4e8&language=pt-br
 
@@ -28,16 +28,18 @@ function Home() {
   }, []);
 
   return (
-    <div className="lista">
+    <div className="container">
       {filmes.map((filmes) => (
-        <article key={filmes.id}>
+        <article className="lista" key={filmes.id}>
           <strong className="titulo">{filmes.title}</strong>
           <img
             className="image"
             src={`https://image.tmdb.org/t/p/w500/${filmes.poster_path}`}
             alt={filmes.title}
           />
-          <Link to={`/Filmes/${filmes.id}`}>Acessar</Link>
+          <Link className="link" to={`/Filmes/${filmes.id}`}>
+            Acessar
+          </Link>
         </article>
       ))}
     </div>
