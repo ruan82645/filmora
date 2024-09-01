@@ -1,0 +1,67 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.errorcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: calc(100vh - 60px);
+  padding: 15px;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 45px;
+  padding-bottom: 25px;
+}
+
+.subtitle {
+  color: aliceblue;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.botao {
+  background-color: rgb(121, 0, 0);
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 35px;
+  padding: 10px 60px 10px 60px;
+  border-radius: 10px;
+}
+
+.retorno {
+  position: relative;
+}
+
+.fightclub {
+  display: flex;
+  align-items: end;
+  height: 600px;
+}
+
+.retornar {
+  padding: 23px 0px 20px 0px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1000;
+  color: #ffd8f9;
+  top: 110px;
+  left: 47px;
+  transform: rotate(13deg);
+  cursor: pointer;
+}
+
+.retornar:hover {
+  transition: all 0.5s;
+  color: rgb(167, 2, 139);
+}
+
+.rule {
+  padding-top: 15px;
+  color: aliceblue;
+}

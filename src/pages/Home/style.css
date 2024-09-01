@@ -5,7 +5,12 @@
 }
 
 body {
-  background-color: #404040;
+  background-image: url(../../Assets/pics/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #252525;
 }
 
 .father {
@@ -15,14 +20,19 @@ body {
   max-width: 100%;
   justify-content: space-around;
   row-gap: 50px;
-  background-color: #404040;
+  background-image: url(../../Assets/pics/fundo.jpeg);
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: contain;
+  background-blend-mode: multiply;
+  background-color: #252525;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 3000px;
+  max-width: 3300px;
   row-gap: 50px;
   padding-top: 50px;
 }
