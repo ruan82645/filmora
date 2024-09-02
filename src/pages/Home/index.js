@@ -24,7 +24,7 @@ function Home() {
 
     let finalFilms = response.data.results;
     setFilmes(finalFilms);
-    setTimeout(load, 5000);
+    setTimeout(load, 1000);
 
     console.log(response.data.results);
   }

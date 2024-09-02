@@ -51,6 +51,7 @@ body {
   align-items: center;
   margin: 5px;
   justify-content: center;
+  cursor: default;
 }
 
 article {
