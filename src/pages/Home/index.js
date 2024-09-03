@@ -50,7 +50,7 @@ function Home() {
             <strong className="titulo">{filmes.title}</strong>
             <img
               className="image"
-              src={`https://image.tmdb.org/t/p/w500/${filmes.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w500/${filmes.backdrop_path}`}
               alt={filmes.title}
             />
             <Link className="link" to={`/Filmes/${filmes.id}`}>

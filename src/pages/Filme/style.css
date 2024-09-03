@@ -1,58 +1,94 @@
-html {
-  color: aliceblue;
-}
-
-body {
-  overflow-x: hidden;
-}
-
 .container2 {
-  width: 100%;
+  margin-top: 40px;
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 30px;
+  color: aliceblue;
+  gap: 40px;
   justify-content: center;
-  justify-items: center;
-  flex-direction: column;
-  position: relative;
 }
 
-.conjuntofoto {
-  width: 100%;
-  top: 0;
-  margin: 0;
-  padding: 0;
+.containerfoto {
+  width: 15%;
 }
 
-.tituloindividual {
-  font-size: 60px;
-  position: relative;
-  bottom: 900px;
-  left: 10px;
+.container2 h1 {
+  font-size: 35px;
 }
 
-.poster {
-  width: 100%;
-  height: auto;
-  display: block;
-  clip-path: inset(0px 0px 200px 0px);
-  mask-image: linear-gradient(to bottom, black 60%, transparent 75%);
+.containerinfo {
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: fit-content;
+  padding: 10px;
+  border-radius: 7px;
 }
 
-.absolute {
-  position: absolute;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding-right: 25px;
-  padding-left: 25px;
-  width: 100%;
-  top: 94%;
+.genres {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.genres article {
+  border-radius: 10px;
+  padding: 7px;
+  background-color: rgb(48, 52, 56);
+}
+
+.vote {
+  display: flex;
+}
+.vote h5 {
+  margin-top: 10px;
 }
 
 .sinopse h3 {
-  font-size: 45px;
+  padding-top: 15px;
 }
+
 .sinopse p {
-  font-size: 23px;
-  margin-top: 15px;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.containerbutton {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.containerbutton button {
+  color: aliceblue;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.trailer {
+  background-color: rgb(121, 0, 0);
+}
+
+.addfav {
+  border: 2px solid;
+  border-color: rgb(121, 0, 0);
+}
+
+.containerProduction {
+  background-color: rgba(255, 255, 255, 0.2);
+
+  height: 250px;
+  padding: 10px;
+  border-radius: 7px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.production {
+  height: 60px;
+  border-top: 1px solid;
+  border-color: rgb(121, 0, 0);
+  font-weight: 550;
 }
