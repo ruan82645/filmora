@@ -1,0 +1,58 @@
+html {
+  color: aliceblue;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.conjuntofoto {
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tituloindividual {
+  font-size: 60px;
+  position: relative;
+  bottom: 900px;
+  left: 10px;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  clip-path: inset(0px 0px 200px 0px);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 75%);
+}
+
+.absolute {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  width: 100%;
+  top: 94%;
+}
+
+.sinopse h3 {
+  font-size: 45px;
+}
+.sinopse p {
+  font-size: 23px;
+  margin-top: 15px;
+}

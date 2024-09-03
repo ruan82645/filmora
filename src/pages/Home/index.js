@@ -12,8 +12,6 @@ function Home() {
   async function loadingfilmes() {
     const response = await api.get("movie/now_playing", {
       params: {
-        api_key: "c634b4775a037a56f5dd2baf3951c4e8",
-        language: "pt-BR",
         page: 1,
       },
     });
@@ -22,8 +20,7 @@ function Home() {
       setLoading(false);
     }
 
-    let finalFilms = response.data.results;
-    setFilmes(finalFilms);
+    setFilmes(response.data.results);
     setTimeout(load, 1000);
 
     console.log(response.data.results);
