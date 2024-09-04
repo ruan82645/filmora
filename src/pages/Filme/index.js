@@ -30,6 +30,23 @@ export default function Filme() {
     loadfilme();
   }, [id, navigate]);
 
+  function salvarFilme() {
+    const minhaLista = localStorage.getItem("@Favoritos");
+
+    let FilmesSalvos = JSON.parse(minhaLista) || [];
+    FilmesSalvos.some((meusFilmes) => {
+      return meusFilmes.id === filme.id;
+    });
+
+    if (FilmesSalvos) {
+      alert("Esse filme já está na lista");
+      return;
+    }
+
+    FilmesSalvos.push(filme);
+    localStorage.setItem("@favoritos", JSON.stringify(FilmesSalvos));
+  }
+
   if (loading) {
     return <h1>Carregando filme...</h1>;
   }
@@ -92,7 +109,9 @@ export default function Filme() {
           >
             Assistir ao Trailer
           </a>
-          <button className="addfav">Add aos favoritos</button>
+          <button className="addfav" onClick={salvarFilme}>
+            Add aos favoritos
+          </button>
         </span>
       </div>
       {/**/}

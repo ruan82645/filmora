@@ -47,7 +47,9 @@ function Home() {
       <div className="container">
         {filmes.map((filmes) => (
           <article className="lista" key={filmes.id}>
-            <strong className="titulo">{filmes.title}</strong>
+            <strong title={filmes.title} className="titulo">
+              {filmes.title}
+            </strong>
             <img
               className="image"
               src={`https://image.tmdb.org/t/p/w500/${filmes.backdrop_path}`}
