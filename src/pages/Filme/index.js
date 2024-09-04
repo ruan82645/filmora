@@ -82,15 +82,16 @@ export default function Filme() {
         {/**/}
         {/*Container de botoes*/}
         <span className="containerbutton">
-          <button className="trailer">
-            <a
-              target="blank"
-              rel="external"
-              href={`https://www.youtube.com/results?search_query=${filme.title}+Trailer`}
-            >
-              Assistir ao Trailer
-            </a>
-          </button>
+          <a
+            className="trailer"
+            target="_blank"
+            rel="external"
+            href={`https://www.youtube.com/results?search_query=${encodeURIComponent(
+              filme.title
+            )}+Trailer`}
+          >
+            Assistir ao Trailer
+          </a>
           <button className="addfav">Add aos favoritos</button>
         </span>
       </div>
