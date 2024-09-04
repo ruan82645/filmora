@@ -1,0 +1,62 @@
+.meus-filmes {
+  color: aliceblue;
+  padding: 5px;
+}
+
+.meus-filmes h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.meus-filmes ul {
+  list-style: none;
+  width: 720px;
+}
+
+.title-fav {
+  font-weight: 600;
+}
+
+.meus-filmes ul li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid;
+}
+
+.minha-lista {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+}
+
+.link {
+  color: aliceblue;
+  margin-left: 15px;
+  background-color: rgb(121, 0, 0);
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.meus-filmes button {
+  color: aliceblue;
+  margin-left: 15px;
+  background-color: rgb(121, 0, 0);
+  padding: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.meus-filmes button:hover {
+  transition: all 0.5s;
+  background-color: rgb(83, 0, 0);
+}
+
+.link:hover {
+  transition: all 0.5s;
+  background-color: rgb(83, 0, 0);
+}

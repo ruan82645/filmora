@@ -31,20 +31,21 @@ export default function Filme() {
   }, [id, navigate]);
 
   function salvarFilme() {
-    const minhaLista = localStorage.getItem("@Favoritos");
+    const minhaLista = localStorage.getItem("@favoritos");
 
     let FilmesSalvos = JSON.parse(minhaLista) || [];
-    FilmesSalvos.some((meusFilmes) => {
+    const hasFilmes = FilmesSalvos.some((meusFilmes) => {
       return meusFilmes.id === filme.id;
     });
 
-    if (FilmesSalvos) {
+    if (hasFilmes) {
       alert("Esse filme já está na lista");
       return;
     }
 
     FilmesSalvos.push(filme);
     localStorage.setItem("@favoritos", JSON.stringify(FilmesSalvos));
+    alert("Filme salvo com sucesso!");
   }
 
   if (loading) {

@@ -11,7 +11,7 @@ function Header() {
       </Link>
 
       <Link to="/Favoritos" className="favoritos">
-        filmes
+        favoritos
       </Link>
     </header>
   );
