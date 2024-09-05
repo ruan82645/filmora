@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Erro from "./pages/Erro";
 import Header from "./Components/Header";
 import Favoritos from "./pages/Favoritos";
+import Footer from "./Components/Footer/Footer";
 
 function RouterApp() {
   return (
@@ -16,6 +17,7 @@ function RouterApp() {
 
         <Route path="/*" element={<Erro />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
