@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function Favoritos() {
   const [favoritos, setFavoritos] = useState([]);
@@ -16,6 +17,7 @@ export default function Favoritos() {
 
     setFavoritos(filtrados);
     localStorage.setItem("@favoritos", JSON.stringify(filtrados));
+    toast.success("Deletado de sua lista!");
   }
 
   return (

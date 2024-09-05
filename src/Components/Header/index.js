@@ -7,7 +7,7 @@ function Header() {
   return (
     <header>
       <Link to="/" className="logo">
-        <img src={FilmoraLogo} />
+        <img src={FilmoraLogo} alt="Logo" />
       </Link>
 
       <Link to="/Favoritos" className="favoritos">

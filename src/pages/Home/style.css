@@ -62,11 +62,6 @@ article {
   transform: scale(0.9);
 }
 
-article:hover .titulo {
-  transition: all 0.7s;
-  color: red;
-}
-
 article:hover a {
   transition: all 0.7s;
   background-color: rgb(121, 0, 0);
@@ -125,7 +120,7 @@ article:hover {
 }
 
 .falsolista {
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;

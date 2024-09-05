@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import api from "../../Services/api";
 import { useParams, useNavigate } from "react-router-dom";
 import "./style.css";
+import { toast } from "react-toastify";
 
 export default function Filme() {
   const { id } = useParams();
@@ -39,17 +40,17 @@ export default function Filme() {
     });
 
     if (hasFilmes) {
-      alert("Esse filme já está na lista");
+      toast.warn("Esse filme já está na lista");
       return;
     }
 
     FilmesSalvos.push(filme);
     localStorage.setItem("@favoritos", JSON.stringify(FilmesSalvos));
-    alert("Filme salvo com sucesso!");
+    toast.success("Filme salvo com sucesso!");
   }
 
   if (loading) {
-    return <h1>Carregando filme...</h1>;
+    return <h1 style={{ color: "white" }}>Carregando filme...</h1>;
   }
 
   return (
@@ -68,6 +69,7 @@ export default function Filme() {
           <img
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
             src={`https://image.tmdb.org/t/p/w500/${filme.poster_path}`}
+            alt={filme.title}
           />
         </div>
       </div>
@@ -102,7 +104,7 @@ export default function Filme() {
         <span className="containerbutton">
           <a
             className="trailer"
-            target="_blank"
+            target="blank"
             rel="external"
             href={`https://www.youtube.com/results?search_query=${encodeURIComponent(
               filme.title
